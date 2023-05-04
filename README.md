@@ -1,4 +1,10 @@
-# menu 
+# simulador-RH
+[menu]
+
+
+
+
+## menu 
 
 A função menu, tem como objetivo dar ao usuario uma opção do 1 ao 13 de calculo de RH, e uma de saida tendo 14 opções. 
 
@@ -33,8 +39,8 @@ O solicita_beneficio_fgts, tem como função solicitar ao usuario o seu salário
 O solicita_multa_fgts, tem como função solicitar ao usuario o valor do depósito total recebido no período,
 
 e pergunta se houve acordo entre você e empregador
-* se sim  o valor  
-* se nao  o valor
+* se sim o valor 20% 
+* se nao o valor 40%
 
 # solicita_direito_ao_seguro_desemprego 
 
