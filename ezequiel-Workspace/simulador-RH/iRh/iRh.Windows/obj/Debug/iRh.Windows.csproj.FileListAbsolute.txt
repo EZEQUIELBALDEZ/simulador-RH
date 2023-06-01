@@ -1,6 +1,0 @@
-C:\Users\TEMP.CEPEAS3143694.012\Documents\ezequiel-Workspace\simulador-RH\iRh\iRh.Windows\obj\Debug\iRh.Windows.csproj.AssemblyReference.cache
-C:\Users\TEMP.CEPEAS3143694.012\Documents\ezequiel-Workspace\simulador-RH\iRh\iRh.Windows\obj\Debug\iRh.Windows.csproj.SuggestedBindingRedirects.cache
-C:\Users\TEMP.CEPEAS3143694.012\Documents\ezequiel-Workspace\simulador-RH\iRh\iRh.Windows\obj\Debug\iRh.Windows.Principalmdi.resources
-C:\Users\TEMP.CEPEAS3143694.012\Documents\ezequiel-Workspace\simulador-RH\iRh\iRh.Windows\obj\Debug\iRh.Windows.Properties.Resources.resources
-C:\Users\TEMP.CEPEAS3143694.012\Documents\ezequiel-Workspace\simulador-RH\iRh\iRh.Windows\obj\Debug\iRh.Windows.csproj.GenerateResource.cache
-C:\Users\TEMP.CEPEAS3143694.012\Documents\ezequiel-Workspace\simulador-RH\iRh\iRh.Windows\obj\Debug\iRh.Windows.csproj.CoreCompileInputs.cache
