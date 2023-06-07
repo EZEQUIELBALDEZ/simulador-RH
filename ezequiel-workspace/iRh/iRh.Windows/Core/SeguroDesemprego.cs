@@ -8,5 +8,12 @@ namespace iRh.Windows.Core
 {
     internal class SeguroDesemprego
     {
+        public static double Calcula(double salario)
+        {
+
+
+            return 0;
+
+        }
     }
 }

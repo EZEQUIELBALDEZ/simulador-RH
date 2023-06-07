@@ -9,15 +9,10 @@ namespace iRh.Windows.Core
     public static class Fgts
     {
         public static double Calcula(double salario)
-        {
-            double fgts 
-            if (salario < 0)
+        {            
+            var beneficioFgts = 0.08 * salario;
 
-
-
-
-
-            return 0;
+            return beneficioFgts;
         }
     }
 }

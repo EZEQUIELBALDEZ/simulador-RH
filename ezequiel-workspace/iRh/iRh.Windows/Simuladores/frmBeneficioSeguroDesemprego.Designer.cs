@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtSalario = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
-            this.lblSalario = new System.Windows.Forms.Label();
+            this.lblSolicitouBeneficio = new System.Windows.Forms.Label();
             this.panelResultado = new System.Windows.Forms.Panel();
             this.lblResultado = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSolicitouBeneficio = new System.Windows.Forms.TextBox();
             this.panelResultado.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox3
+            // txtSalario
             // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(46, 130);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(267, 29);
-            this.textBox3.TabIndex = 27;
+            this.txtSalario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSalario.Location = new System.Drawing.Point(46, 130);
+            this.txtSalario.Name = "txtSalario";
+            this.txtSalario.Size = new System.Drawing.Size(267, 29);
+            this.txtSalario.TabIndex = 27;
             // 
             // label1
             // 
@@ -65,16 +65,17 @@
             this.btnCalcular.TabIndex = 25;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
-            // lblSalario
+            // lblSolicitouBeneficio
             // 
-            this.lblSalario.AutoSize = true;
-            this.lblSalario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalario.Location = new System.Drawing.Point(42, 26);
-            this.lblSalario.Name = "lblSalario";
-            this.lblSalario.Size = new System.Drawing.Size(315, 21);
-            this.lblSalario.TabIndex = 24;
-            this.lblSalario.Text = "Quantas vezes você já solicitou o benefício? ";
+            this.lblSolicitouBeneficio.AutoSize = true;
+            this.lblSolicitouBeneficio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSolicitouBeneficio.Location = new System.Drawing.Point(42, 26);
+            this.lblSolicitouBeneficio.Name = "lblSolicitouBeneficio";
+            this.lblSolicitouBeneficio.Size = new System.Drawing.Size(315, 21);
+            this.lblSolicitouBeneficio.TabIndex = 24;
+            this.lblSolicitouBeneficio.Text = "Quantas vezes você já solicitou o benefício? ";
             // 
             // panelResultado
             // 
@@ -97,24 +98,24 @@
             this.lblResultado.Text = "Resultado";
             this.lblResultado.Visible = false;
             // 
-            // textBox1
+            // txtSolicitouBeneficio
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(46, 59);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(267, 29);
-            this.textBox1.TabIndex = 32;
+            this.txtSolicitouBeneficio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSolicitouBeneficio.Location = new System.Drawing.Point(46, 59);
+            this.txtSolicitouBeneficio.Name = "txtSolicitouBeneficio";
+            this.txtSolicitouBeneficio.Size = new System.Drawing.Size(267, 29);
+            this.txtSolicitouBeneficio.TabIndex = 32;
             // 
             // frmBeneficioSeguroDesemprego
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtSolicitouBeneficio);
+            this.Controls.Add(this.txtSalario);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCalcular);
-            this.Controls.Add(this.lblSalario);
+            this.Controls.Add(this.lblSolicitouBeneficio);
             this.Controls.Add(this.panelResultado);
             this.Name = "frmBeneficioSeguroDesemprego";
             this.Text = "frmBeneficioSeguroDesemprego";
@@ -127,12 +128,12 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtSalario;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCalcular;
-        private System.Windows.Forms.Label lblSalario;
+        private System.Windows.Forms.Label lblSolicitouBeneficio;
         private System.Windows.Forms.Panel panelResultado;
         private System.Windows.Forms.Label lblResultado;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSolicitouBeneficio;
     }
 }

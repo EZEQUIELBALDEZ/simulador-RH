@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.btnCalcular = new System.Windows.Forms.Button();
-            this.lblSalario = new System.Windows.Forms.Label();
+            this.lblTempoTrabalhaCarteiraAsisninada = new System.Windows.Forms.Label();
             this.panelResultado = new System.Windows.Forms.Panel();
             this.lblResultado = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblSalario = new System.Windows.Forms.Label();
+            this.txtSalario = new System.Windows.Forms.TextBox();
+            this.txtTempoTrabalhaCarteiraAsisninada = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
@@ -50,16 +50,17 @@
             this.btnCalcular.TabIndex = 11;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
-            // lblSalario
+            // lblTempoTrabalhaCarteiraAsisninada
             // 
-            this.lblSalario.AutoSize = true;
-            this.lblSalario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalario.Location = new System.Drawing.Point(35, 57);
-            this.lblSalario.Name = "lblSalario";
-            this.lblSalario.Size = new System.Drawing.Size(376, 21);
-            this.lblSalario.TabIndex = 9;
-            this.lblSalario.Text = "Há quanto tempo você trabalha de carteira assinada?";
+            this.lblTempoTrabalhaCarteiraAsisninada.AutoSize = true;
+            this.lblTempoTrabalhaCarteiraAsisninada.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTempoTrabalhaCarteiraAsisninada.Location = new System.Drawing.Point(35, 57);
+            this.lblTempoTrabalhaCarteiraAsisninada.Name = "lblTempoTrabalhaCarteiraAsisninada";
+            this.lblTempoTrabalhaCarteiraAsisninada.Size = new System.Drawing.Size(376, 21);
+            this.lblTempoTrabalhaCarteiraAsisninada.TabIndex = 9;
+            this.lblTempoTrabalhaCarteiraAsisninada.Text = "Há quanto tempo você trabalha de carteira assinada?";
             // 
             // panelResultado
             // 
@@ -82,31 +83,31 @@
             this.lblResultado.Text = "Resultado";
             this.lblResultado.Visible = false;
             // 
-            // label1
+            // lblSalario
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(35, 137);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 21);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Informe seu salário bruto:";
+            this.lblSalario.AutoSize = true;
+            this.lblSalario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSalario.Location = new System.Drawing.Point(35, 137);
+            this.lblSalario.Name = "lblSalario";
+            this.lblSalario.Size = new System.Drawing.Size(188, 21);
+            this.lblSalario.TabIndex = 12;
+            this.lblSalario.Text = "Informe seu salário bruto:";
             // 
-            // textBox3
+            // txtSalario
             // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(39, 161);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(267, 29);
-            this.textBox3.TabIndex = 18;
+            this.txtSalario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSalario.Location = new System.Drawing.Point(39, 161);
+            this.txtSalario.Name = "txtSalario";
+            this.txtSalario.Size = new System.Drawing.Size(267, 29);
+            this.txtSalario.TabIndex = 18;
             // 
-            // textBox1
+            // txtTempoTrabalhaCarteiraAsisninada
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(39, 81);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(267, 29);
-            this.textBox1.TabIndex = 19;
+            this.txtTempoTrabalhaCarteiraAsisninada.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTempoTrabalhaCarteiraAsisninada.Location = new System.Drawing.Point(39, 81);
+            this.txtTempoTrabalhaCarteiraAsisninada.Name = "txtTempoTrabalhaCarteiraAsisninada";
+            this.txtTempoTrabalhaCarteiraAsisninada.Size = new System.Drawing.Size(267, 29);
+            this.txtTempoTrabalhaCarteiraAsisninada.TabIndex = 19;
             // 
             // label2
             // 
@@ -146,11 +147,11 @@
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnCalcular);
+            this.Controls.Add(this.txtTempoTrabalhaCarteiraAsisninada);
+            this.Controls.Add(this.txtSalario);
             this.Controls.Add(this.lblSalario);
+            this.Controls.Add(this.btnCalcular);
+            this.Controls.Add(this.lblTempoTrabalhaCarteiraAsisninada);
             this.Controls.Add(this.panelResultado);
             this.Name = "frmBeneficioPis";
             this.Text = "frmBeneficioPis";
@@ -164,12 +165,12 @@
         #endregion
 
         private System.Windows.Forms.Button btnCalcular;
-        private System.Windows.Forms.Label lblSalario;
+        private System.Windows.Forms.Label lblTempoTrabalhaCarteiraAsisninada;
         private System.Windows.Forms.Panel panelResultado;
         private System.Windows.Forms.Label lblResultado;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblSalario;
+        private System.Windows.Forms.TextBox txtSalario;
+        private System.Windows.Forms.TextBox txtTempoTrabalhaCarteiraAsisninada;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;

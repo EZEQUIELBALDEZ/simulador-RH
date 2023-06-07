@@ -13,6 +13,7 @@ namespace iRh.Windows.Simuladores
 {
     public partial class frmBeneficioAdicionalNoturno : Form
     {
+
         public frmBeneficioAdicionalNoturno()
         {
             InitializeComponent();
@@ -45,6 +46,7 @@ namespace iRh.Windows.Simuladores
                                     "Atenção",
                                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+
 
         }
     }
