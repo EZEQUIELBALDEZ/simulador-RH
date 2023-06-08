@@ -7,32 +7,25 @@ using System.Threading.Tasks;
 namespace iRh.Windows.Core
 {
  
-        public static class HoraExtra
+     public static class HoraExtra
+     {
+
+        public static double Calcula(double salario, double horasTrabalhadasMes, double horaExtras, double taxaHoraExtra)
         {
-       
-          
-            public static double Calcula(double salario)
-            {
-            //    real valor_hora_trabalhada = salario_bruto / horas_trabalhadas_no_mes
+            double valorHoraTrabalhada = salario / horasTrabalhadasMes;
 
-            //real adicional_hora_extra = 0.0
+            double adicionalHoraExtra = 0.0;
 
-            //real valor_hora_extra = valor_hora_trabalhada + taxa_da_hora_extra * valor_hora_trabalhada
+            double valorHoraExtra = valorHoraTrabalhada + taxaHoraExtra * valorHoraTrabalhada;
 
 
-            //adicional_hora_extra = valor_hora_extra * horas_extras
+            adicionalHoraExtra = valorHoraExtra * horaExtras;
+
+            double adicional_horas_extras = Calcula(salario, horasTrabalhadasMes, valorHoraTrabalhada, taxaHoraExtra);
 
 
-            //retorne mat.arredondar(adicional_hora_extra, 2)
-
-                  double ValorHoraTrabalhada = salario / txtHorasTrabalhadasMes;
-                  double adicionalHoraExtra = 0.0;
-                  double ValorHoraExtra = ValorHoraTrabalhada + TaxaHoraExtra * ValorHoraTrabalhada;
-                  adicionalHoraExtra = ValorHoraTrabalhada + horasextras;
-
-
-                  return (adicionalHoraExtra, 2);
-            }
+            return adicionalHoraExtra;
         }
-    
+
+     }
 }

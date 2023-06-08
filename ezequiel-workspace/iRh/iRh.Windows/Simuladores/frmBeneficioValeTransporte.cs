@@ -33,9 +33,9 @@ namespace iRh.Windows.Simuladores
             try
             {
                 var salario = double.Parse(txtSalario.Text);
-                var valetransporte = ValeTransporte.Calcula(salario);
+                var Beneficiovaletransporte = ValeTransporte.Calcula(salario);
 
-                lblResultado.Text = valetransporte.ToString("C");
+                lblResultado.Text = Beneficiovaletransporte.ToString("C");
 
                 lblResultado.Visible = true;
                 panelResultado.Visible = true;

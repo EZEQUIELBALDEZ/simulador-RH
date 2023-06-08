@@ -32,9 +32,9 @@ namespace iRh.Windows.Simuladores
             try
             {
                 var salario = double.Parse(txtSalario.Text);
-                var valetransporte = ValeTransporte.Calcula(salario);
+                var DesconteIrrf = Irrf.Calcula(salario);
 
-                lblResultado.Text = valetransporte.ToString("C");
+                lblResultado.Text = DesconteIrrf.ToString("C");
 
                 lblResultado.Visible = true;
                 panelResultado.Visible = true;

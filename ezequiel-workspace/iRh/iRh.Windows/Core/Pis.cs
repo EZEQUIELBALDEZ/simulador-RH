@@ -8,11 +8,17 @@ namespace iRh.Windows.Core
 {
     internal class Pis
     {
-        public static double Calcula(double salario)
+        public static double Calcula(double salario, double mesesTrabalhados)
         {
+            
+            const double salarioMinimoAtual = 1302.0;
 
+            double abonoPis = 0.0;
 
-            return 0;
+            abonoPis = salarioMinimoAtual * mesesTrabalhados / 12;
+
+         
+            return abonoPis;
         }
 
     }

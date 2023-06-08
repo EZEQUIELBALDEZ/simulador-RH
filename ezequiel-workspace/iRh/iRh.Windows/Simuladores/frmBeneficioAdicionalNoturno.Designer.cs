@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panelResultado = new System.Windows.Forms.Panel();
+            this.lblReceberáPelasHorasnoTurnasTrabalhadas = new System.Windows.Forms.Label();
             this.lblResultado = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.txtSalario = new System.Windows.Forms.TextBox();
@@ -37,7 +38,6 @@
             this.lblHorasNoturnasTrabalhadas = new System.Windows.Forms.Label();
             this.txtHorasTrabalhadasMes = new System.Windows.Forms.TextBox();
             this.txtHorasNoturnasTrabalhadas = new System.Windows.Forms.TextBox();
-            this.lblReceberáPelasHorasnoTurnasTrabalhadas = new System.Windows.Forms.Label();
             this.panelResultado.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,6 +51,17 @@
             this.panelResultado.Size = new System.Drawing.Size(696, 55);
             this.panelResultado.TabIndex = 4;
             this.panelResultado.Visible = false;
+            // 
+            // lblReceberáPelasHorasnoTurnasTrabalhadas
+            // 
+            this.lblReceberáPelasHorasnoTurnasTrabalhadas.AutoSize = true;
+            this.lblReceberáPelasHorasnoTurnasTrabalhadas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReceberáPelasHorasnoTurnasTrabalhadas.Location = new System.Drawing.Point(13, 16);
+            this.lblReceberáPelasHorasnoTurnasTrabalhadas.Name = "lblReceberáPelasHorasnoTurnasTrabalhadas";
+            this.lblReceberáPelasHorasnoTurnasTrabalhadas.Size = new System.Drawing.Size(373, 21);
+            this.lblReceberáPelasHorasnoTurnasTrabalhadas.TabIndex = 5;
+            this.lblReceberáPelasHorasnoTurnasTrabalhadas.Text = "Você receberá pelas horas noturnas trabalhadas: R$\"";
+            this.lblReceberáPelasHorasnoTurnasTrabalhadas.Visible = false;
             // 
             // lblResultado
             // 
@@ -127,17 +138,6 @@
             this.txtHorasNoturnasTrabalhadas.Name = "txtHorasNoturnasTrabalhadas";
             this.txtHorasNoturnasTrabalhadas.Size = new System.Drawing.Size(267, 35);
             this.txtHorasNoturnasTrabalhadas.TabIndex = 11;
-            // 
-            // lblReceberáPelasHorasnoTurnasTrabalhadas
-            // 
-            this.lblReceberáPelasHorasnoTurnasTrabalhadas.AutoSize = true;
-            this.lblReceberáPelasHorasnoTurnasTrabalhadas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReceberáPelasHorasnoTurnasTrabalhadas.Location = new System.Drawing.Point(13, 16);
-            this.lblReceberáPelasHorasnoTurnasTrabalhadas.Name = "lblReceberáPelasHorasnoTurnasTrabalhadas";
-            this.lblReceberáPelasHorasnoTurnasTrabalhadas.Size = new System.Drawing.Size(373, 21);
-            this.lblReceberáPelasHorasnoTurnasTrabalhadas.TabIndex = 5;
-            this.lblReceberáPelasHorasnoTurnasTrabalhadas.Text = "Você receberá pelas horas noturnas trabalhadas: R$\"";
-            this.lblReceberáPelasHorasnoTurnasTrabalhadas.Visible = false;
             // 
             // frmBeneficioAdicionalNoturno
             // 

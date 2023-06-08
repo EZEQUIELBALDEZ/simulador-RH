@@ -32,9 +32,12 @@ namespace iRh.Windows.Simuladores
             try
             {
                 var salario = double.Parse(txtSalario.Text);
-                var valetransporte = ValeTransporte.Calcula(salario);
+                var horas = double.Parse(txtHorasExtrasTrabalhadas.Text);
+                var horasMeses = double.Parse(txtHorasTrabalhadasMes.Text);
+                var taxaHoraTrabalhada = double.Parse(txtTaxaDeHora.Text);
+                var beneficioHoraExtra = HoraExtra.Calcula(salario, horas, horasMeses, taxaHoraTrabalhada  );
 
-                lblResultado.Text = valetransporte.ToString("C");
+                lblResultado.Text = beneficioHoraExtra.ToString("C");
 
                 lblResultado.Visible = true;
                 panelResultado.Visible = true;

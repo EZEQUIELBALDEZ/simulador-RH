@@ -10,9 +10,12 @@ namespace iRh.Windows.Core
     {
         public static double Calcula(double salario)
         {
+            
+            double valorValeTransporte = 0.0;
 
+            valorValeTransporte = 0.06 * salario;
 
-            return 0;
+            return valorValeTransporte;
         }
     }
 }

@@ -10,22 +10,19 @@ namespace iRh.Windows.Core
     internal class AdicionalNoturno
     {
 
-        public static double Calcula(double salario)
+        public static double Calcula(double salario, double horasNoturnasTrabalhadas, double horasTrabalhadas)
         {
-           
-
-            double txtHorasTrabalhadasMes;
-            double txtHorasNoturnasTrabalhadas;
+            
 
 
-            double ValorHoraTrabalhada = salario/txtHorasTrabalhadasMes;
-            double TaxaNoturna = 0.2;
-            double AdicionalNoturno = 0.0;
-            double HorasNoturnas = 60 * txtHorasNoturnasTrabalhadas / 52.5;
+            double valorHoraTrabalhada = salario / horasTrabalhadas;
+            double taxaNoturna = 0.2;
+            double adicionalNoturno = 0.0;
+            double horasNoturnas = 60 * horasNoturnasTrabalhadas / 52.5;
 
-            lblResultado = taxanoturna * valorhoratrabalhada * txtHorasNoturnasTrabalhadas;
+            adicionalNoturno = taxaNoturna  * valorHoraTrabalhada * horasNoturnas;
 
-            return 0;
+            return adicionalNoturno;
         }
 
 

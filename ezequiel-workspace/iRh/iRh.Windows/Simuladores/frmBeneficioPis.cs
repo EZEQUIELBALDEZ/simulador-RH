@@ -32,9 +32,10 @@ namespace iRh.Windows.Simuladores
             try
             {
                 var salario = double.Parse(txtSalario.Text);
-                var pis = Pis.Calcula(salario);
+                var mesesTrabalhados = double.Parse(txtTempoTrabalhaCarteiraAsisninada.Text);
+                var beneficioPis = Pis.Calcula(salario, mesesTrabalhados);
 
-                lblResultado.Text = Pis.ToString("C");
+                lblResultado.Text = beneficioPis.ToString("C");
 
                 lblResultado.Visible = true;
                 panelResultado.Visible = true;

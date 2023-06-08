@@ -21,6 +21,8 @@ namespace iRh.Windows.Simuladores
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
+
+          
             if (string.IsNullOrEmpty(txtSalario.Text))
             {
                 MessageBox.Show("Informe seu salário base", "Error",
@@ -33,7 +35,10 @@ namespace iRh.Windows.Simuladores
             try
             {
                 var salario = double.Parse(txtSalario.Text);
-                var beneficioadicionalnoturno = AdicionalNoturno.Calcula(salario);
+                var horasNoturnasTrabalhadas = double.Parse(txtHorasNoturnasTrabalhadas.Text);
+                var horasTrabalhadasmes = double.Parse(txtHorasTrabalhadasMes.Text);
+
+                var beneficioadicionalnoturno = AdicionalNoturno.Calcula(salario, horasNoturnasTrabalhadas, horasTrabalhadasmes);
 
                 lblResultado.Text = beneficioadicionalnoturno.ToString("C");
 
@@ -49,5 +54,7 @@ namespace iRh.Windows.Simuladores
 
 
         }
+
+      
     }
 }
