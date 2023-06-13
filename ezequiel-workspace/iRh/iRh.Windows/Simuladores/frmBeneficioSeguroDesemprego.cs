@@ -32,9 +32,10 @@ namespace iRh.Windows.Simuladores
             try
             {
                 var salario = double.Parse(txtSalario.Text);
-                var valetransporte = ValeTransporte.Calcula(salario);
+                var solicitouBeneficio = double.Parse(txtSolicitouBeneficio.Text);
+                var seguroDesemprego = SeguroDesemprego.Calcula(salario, solicitouBeneficio);
 
-                lblResultado.Text = valetransporte.ToString("C");
+                lblResultado.Text = seguroDesemprego.ToString("C");
 
                 lblResultado.Visible = true;
                 panelResultado.Visible = true;

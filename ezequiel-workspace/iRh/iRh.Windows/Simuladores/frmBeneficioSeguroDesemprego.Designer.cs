@@ -83,7 +83,7 @@
             this.panelResultado.Controls.Add(this.lblResultado);
             this.panelResultado.Location = new System.Drawing.Point(46, 282);
             this.panelResultado.Name = "panelResultado";
-            this.panelResultado.Size = new System.Drawing.Size(631, 74);
+            this.panelResultado.Size = new System.Drawing.Size(476, 136);
             this.panelResultado.TabIndex = 23;
             this.panelResultado.Visible = false;
             // 
@@ -110,7 +110,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(679, 450);
             this.Controls.Add(this.txtSolicitouBeneficio);
             this.Controls.Add(this.txtSalario);
             this.Controls.Add(this.label1);

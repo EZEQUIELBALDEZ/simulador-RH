@@ -38,6 +38,8 @@ namespace iRh.Windows.Simuladores
 
                 lblResultado.Visible = true;
                 panelResultado.Visible = true;
+
+
             }
             catch (Exception)
             {
@@ -45,6 +47,11 @@ namespace iRh.Windows.Simuladores
                                     "Atenção",
                                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void lblResultado_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

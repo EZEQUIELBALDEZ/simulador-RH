@@ -53,6 +53,8 @@
       <DependentUpon>frmFuncionario.cs</DependentUpon>
     </Compile>
     <Compile Include="Core\AdicionalNoturno.cs" />
+    <Compile Include="Core\Colaborado.cs" />
+    <Compile Include="Core\Estados.cs" />
     <Compile Include="Core\Ferias.cs" />
     <Compile Include="Core\Fgts.cs" />
     <Compile Include="Core\HoraExtra.cs" />
@@ -130,6 +132,12 @@
     <Compile Include="Simuladores\frmDescontoIrrf.Designer.cs">
       <DependentUpon>frmDescontoIrrf.cs</DependentUpon>
     </Compile>
+    <Compile Include="Simuladores\frmFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simuladores\frmFuncionarios.Designer.cs">
+      <DependentUpon>frmFuncionarios.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="PrincipalMdi.resx">
       <DependentUpon>PrincipalMdi.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,6 +149,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Simuladores\frmBeneficioAdicionalNoturno.resx">
       <DependentUpon>frmBeneficioAdicionalNoturno.cs</DependentUpon>
@@ -172,6 +181,9 @@
     <EmbeddedResource Include="Simuladores\frmDescontoIrrf.resx">
       <DependentUpon>frmDescontoIrrf.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Simuladores\frmFuncionarios.resx">
+      <DependentUpon>frmFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -185,6 +197,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\whatsapp %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

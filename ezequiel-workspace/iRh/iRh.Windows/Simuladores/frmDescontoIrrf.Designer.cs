@@ -69,7 +69,7 @@
             // 
             this.panelResultado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.panelResultado.Controls.Add(this.lblResultado);
-            this.panelResultado.Location = new System.Drawing.Point(43, 217);
+            this.panelResultado.Location = new System.Drawing.Point(43, 236);
             this.panelResultado.Name = "panelResultado";
             this.panelResultado.Size = new System.Drawing.Size(454, 113);
             this.panelResultado.TabIndex = 8;
@@ -85,6 +85,7 @@
             this.lblResultado.TabIndex = 4;
             this.lblResultado.Text = "Resultado";
             this.lblResultado.Visible = false;
+            this.lblResultado.Click += new System.EventHandler(this.lblResultado_Click);
             // 
             // frmDescontoIrrf
             // 
