@@ -27,6 +27,7 @@ namespace iRh.Windows.Simuladores
         {
             var estado = new Estados();
             var listaEstados = estado.ObterTodosEstados();
+            var estadosAZ = listaEstados.OrderBy(x => x.Sigla).ToList();
 
             cmbEstados.Items.Clear();
             cmbEstados.DataSource = listaEstados.OrderBy(x => x.Sigla);
@@ -36,6 +37,7 @@ namespace iRh.Windows.Simuladores
             cmbEstados.SelectedValue = 12;
 
         }
+
 
       
     }
