@@ -36,12 +36,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtDataNascimento = new System.Windows.Forms.MaskedTextBox();
-            this.txtCep = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnPesquisar = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtLogradouro = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtBairro = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtCidade = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -50,7 +49,7 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtDdd = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -58,6 +57,7 @@
             this.cmbDocumentoDeIdentificacao = new System.Windows.Forms.ComboBox();
             this.lblDocumentoDeIdentificacao = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
+            this.txtCep = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -110,13 +110,6 @@
             this.txtDataNascimento.TabIndex = 5;
             this.txtDataNascimento.ValidatingType = typeof(System.DateTime);
             // 
-            // txtCep
-            // 
-            this.txtCep.Location = new System.Drawing.Point(39, 127);
-            this.txtCep.Name = "txtCep";
-            this.txtCep.Size = new System.Drawing.Size(98, 20);
-            this.txtCep.TabIndex = 7;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -134,14 +127,13 @@
             this.btnPesquisar.TabIndex = 8;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = true;
-            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
-            // textBox2
+            // txtLogradouro
             // 
-            this.textBox2.Location = new System.Drawing.Point(39, 201);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(280, 20);
-            this.textBox2.TabIndex = 10;
+            this.txtLogradouro.Location = new System.Drawing.Point(39, 201);
+            this.txtLogradouro.Name = "txtLogradouro";
+            this.txtLogradouro.Size = new System.Drawing.Size(280, 20);
+            this.txtLogradouro.TabIndex = 10;
             // 
             // label5
             // 
@@ -152,12 +144,12 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "LOGRADOURO";
             // 
-            // textBox3
+            // txtBairro
             // 
-            this.textBox3.Location = new System.Drawing.Point(416, 201);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(191, 20);
-            this.textBox3.TabIndex = 12;
+            this.txtBairro.Location = new System.Drawing.Point(416, 201);
+            this.txtBairro.Name = "txtBairro";
+            this.txtBairro.Size = new System.Drawing.Size(191, 20);
+            this.txtBairro.TabIndex = 12;
             // 
             // label6
             // 
@@ -228,12 +220,12 @@
             this.button2.TabIndex = 19;
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // txtDdd
             // 
-            this.textBox5.Location = new System.Drawing.Point(39, 304);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(28, 20);
-            this.textBox5.TabIndex = 21;
+            this.txtDdd.Location = new System.Drawing.Point(39, 304);
+            this.txtDdd.Name = "txtDdd";
+            this.txtDdd.Size = new System.Drawing.Size(28, 20);
+            this.txtDdd.TabIndex = 21;
             // 
             // label10
             // 
@@ -274,7 +266,7 @@
             // cmbDocumentoDeIdentificacao
             // 
             this.cmbDocumentoDeIdentificacao.FormattingEnabled = true;
-            this.cmbDocumentoDeIdentificacao.Location = new System.Drawing.Point(288, 125);
+            this.cmbDocumentoDeIdentificacao.Location = new System.Drawing.Point(404, 126);
             this.cmbDocumentoDeIdentificacao.Name = "cmbDocumentoDeIdentificacao";
             this.cmbDocumentoDeIdentificacao.Size = new System.Drawing.Size(209, 21);
             this.cmbDocumentoDeIdentificacao.TabIndex = 25;
@@ -282,7 +274,7 @@
             // lblDocumentoDeIdentificacao
             // 
             this.lblDocumentoDeIdentificacao.AutoSize = true;
-            this.lblDocumentoDeIdentificacao.Location = new System.Drawing.Point(287, 109);
+            this.lblDocumentoDeIdentificacao.Location = new System.Drawing.Point(403, 110);
             this.lblDocumentoDeIdentificacao.Name = "lblDocumentoDeIdentificacao";
             this.lblDocumentoDeIdentificacao.Size = new System.Drawing.Size(179, 13);
             this.lblDocumentoDeIdentificacao.TabIndex = 26;
@@ -297,18 +289,28 @@
             this.button3.TabIndex = 42;
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // txtCep
+            // 
+            this.txtCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCep.Location = new System.Drawing.Point(37, 126);
+            this.txtCep.Mask = "00000-999";
+            this.txtCep.Name = "txtCep";
+            this.txtCep.Size = new System.Drawing.Size(100, 22);
+            this.txtCep.TabIndex = 44;
+            // 
             // frmFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(653, 450);
+            this.Controls.Add(this.txtCep);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.lblDocumentoDeIdentificacao);
             this.Controls.Add(this.cmbDocumentoDeIdentificacao);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtDdd);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox4);
@@ -317,12 +319,11 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtCidade);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtBairro);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtLogradouro);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnPesquisar);
-            this.Controls.Add(this.txtCep);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtDataNascimento);
             this.Controls.Add(this.label3);
@@ -346,12 +347,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.MaskedTextBox txtDataNascimento;
-        private System.Windows.Forms.TextBox txtCep;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnPesquisar;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtLogradouro;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.Label label7;
@@ -360,7 +360,7 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtDdd;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label11;
@@ -368,5 +368,6 @@
         private System.Windows.Forms.ComboBox cmbDocumentoDeIdentificacao;
         private System.Windows.Forms.Label lblDocumentoDeIdentificacao;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.MaskedTextBox txtCep;
     }
 }

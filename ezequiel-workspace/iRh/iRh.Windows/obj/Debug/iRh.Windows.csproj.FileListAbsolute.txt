@@ -118,3 +118,8 @@ C:\Users\TEMP.CEPEAS3143694.014\Downloads\ezequiel-workspace\ezequiel-workspace\
 C:\Users\TEMP.CEPEAS3143694.014\Downloads\ezequiel-workspace\ezequiel-workspace\iRh\iRh.Windows\bin\Debug\iRh.Windows.exe.config
 C:\Users\TEMP.CEPEAS3143694.014\Downloads\ezequiel-workspace\ezequiel-workspace\iRh\iRh.Windows\bin\Debug\iRh.Windows.exe
 C:\Users\TEMP.CEPEAS3143694.014\Downloads\ezequiel-workspace\ezequiel-workspace\iRh\iRh.Windows\bin\Debug\iRh.Windows.pdb
+C:\Users\TEMP.CEPEAS3143694.014\Documents\ezequiel-workspace\simulador-RH\ezequiel-workspace\iRh\iRh.Windows\obj\Debug\iRh.Windows.Cadastros.frmFuncionario.resources
+C:\Users\TEMP.CEPEAS3143694.014\Documents\ezequiel-workspace\simulador-RH\ezequiel-workspace\iRh\iRh.Windows\obj\Debug\iRh.Windows.Simuladores.Funcionarios.resources
+C:\Users\TEMP.CEPEAS3143694.014\Documents\ezequiel-workspace\simulador-RH\ezequiel-workspace\iRh\iRh.Windows\bin\Debug\Newtonsoft.Json.dll
+C:\Users\TEMP.CEPEAS3143694.014\Documents\ezequiel-workspace\simulador-RH\ezequiel-workspace\iRh\iRh.Windows\bin\Debug\Newtonsoft.Json.xml
+C:\Users\TEMP.CEPEAS3143694.014\Documents\ezequiel-workspace\simulador-RH\ezequiel-workspace\iRh\iRh.Windows\obj\Debug\iRh.Windows.csproj.CopyComplete

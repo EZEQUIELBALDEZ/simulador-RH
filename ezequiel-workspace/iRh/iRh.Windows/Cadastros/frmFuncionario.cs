@@ -34,17 +34,44 @@ namespace iRh.Windows.Cadastros
             cmbEstados.ValueMember = "Sigla";
         }
 
-        private void btnPesquisar_Click(object sender, EventArgs e)
+        private void btnPesquisar_Click(object sender,System. , EventArgs e)
         {
             var cepDigitado = txtCep.Text;
+            if (cepDigitado.Length < 9)
+            {
+                MessageBox.Show("Digite um cep valido", "Error");
+                txtCep.Focus();
+                return;
+            }
 
             var endereco = new Endereco();
+
             var enderecoCompleto = endereco.ObterPorCep(cepDigitado);
 
+            if(enderecoCompleto.Erro == true)
+            {
+                MessageBox.Show("O cep informado não existe");
+                txtCep.Focus();
+                return;
+            }
+            if(endereco.Localidade != "")
+            {
+                txtCidade.Enabled = false;  
+            }
+            if(endereco.Uf != "")
+            {
+                cbm
+            }
 
-
+            txtLogradouro.Text = enderecoCompleto.Logradouro;
+            txtBairro.Text = enderecoCompleto.Bairro;
+            txtCidade.Text = enderecoCompleto.Localidade;
+            txtDdd.Text = enderecoCompleto.Ddd;
+            cmbEstados.SelectedValue = enderecoCompleto.Uf;
 
 
         }
+
+       
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace iRh.Windows.Core
 {
-    internal class DocumentoIndentificacao
+    public class DocumentoIndentificacao
     {
         public int Id { get; set; }
         public string Descricao { get; set; }
@@ -20,7 +20,6 @@ namespace iRh.Windows.Core
             listaDocumentos.Add(new DocumentoIndentificacao() { Id = 3, Descricao = "Carteira Nacional de Habilitação" });
 
             return listaDocumentos;
-
         }
 
 
