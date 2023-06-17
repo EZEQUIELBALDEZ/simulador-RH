@@ -64,11 +64,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cadastros\frmFuncionario.cs">
+    <Compile Include="Cadastros\frmFuncionarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cadastros\frmFuncionario.Designer.cs">
-      <DependentUpon>frmFuncionario.cs</DependentUpon>
+    <Compile Include="Cadastros\frmFuncionarios.Designer.cs">
+      <DependentUpon>frmFuncionarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Core\AdicionalNoturno.cs" />
     <Compile Include="Core\Colaborado.cs" />
@@ -158,9 +158,6 @@
     <Compile Include="Simuladores\frmFuncionarios.Designer.cs">
       <DependentUpon>frmFuncionarios.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Cadastros\frmFuncionario.resx">
-      <DependentUpon>frmFuncionario.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="PrincipalMdi.resx">
       <DependentUpon>PrincipalMdi.cs</DependentUpon>
     </EmbeddedResource>

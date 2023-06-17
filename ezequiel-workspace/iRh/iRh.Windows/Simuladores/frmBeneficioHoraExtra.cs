@@ -50,6 +50,5 @@ namespace iRh.Windows.Simuladores
             }
         }
 
-     
     }
 }

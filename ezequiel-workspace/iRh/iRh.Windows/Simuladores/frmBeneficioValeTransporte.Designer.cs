@@ -33,6 +33,11 @@
             this.btnCalcular = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblResult = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox3
@@ -82,9 +87,50 @@
             this.label1.TabIndex = 35;
             this.label1.Text = "Informe seu salário bruto:";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.lblResult);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Location = new System.Drawing.Point(12, 216);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(614, 127);
+            this.panel1.TabIndex = 37;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(28, 24);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(128, 21);
+            this.label3.TabIndex = 36;
+            this.label3.Text = "Você gastaria: R$";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(28, 83);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(368, 21);
+            this.label4.TabIndex = 37;
+            this.label4.Text = "Será descontado, caso opte pelo vale-transporte: R$";
+            // 
+            // lblResult
+            // 
+            this.lblResult.AutoSize = true;
+            this.lblResult.Location = new System.Drawing.Point(162, 30);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(65, 13);
+            this.lblResult.TabIndex = 38;
+            this.lblResult.Text = "lblResultado";
+            // 
             // frmBeneficioValeTransporte
             // 
-            this.ClientSize = new System.Drawing.Size(588, 315);
+            this.ClientSize = new System.Drawing.Size(715, 360);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox3);
@@ -92,6 +138,8 @@
             this.Controls.Add(this.btnCalcular);
             this.Name = "frmBeneficioValeTransporte";
             this.Text = "Beneficio Vale Transporte";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -114,5 +162,9 @@
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblResult;
     }
 }

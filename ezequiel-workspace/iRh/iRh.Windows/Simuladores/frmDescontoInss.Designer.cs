@@ -33,6 +33,7 @@
             this.btnCalcular = new System.Windows.Forms.Button();
             this.panelResultado = new System.Windows.Forms.Panel();
             this.lblResultado = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelResultado.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,10 +69,11 @@
             // panelResultado
             // 
             this.panelResultado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panelResultado.Controls.Add(this.label1);
             this.panelResultado.Controls.Add(this.lblResultado);
             this.panelResultado.Location = new System.Drawing.Point(0, 209);
             this.panelResultado.Name = "panelResultado";
-            this.panelResultado.Size = new System.Drawing.Size(454, 113);
+            this.panelResultado.Size = new System.Drawing.Size(441, 113);
             this.panelResultado.TabIndex = 3;
             this.panelResultado.Visible = false;
             // 
@@ -79,13 +81,23 @@
             // 
             this.lblResultado.AutoSize = true;
             this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultado.Location = new System.Drawing.Point(166, 44);
+            this.lblResultado.Location = new System.Drawing.Point(124, 44);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(104, 30);
             this.lblResultado.TabIndex = 4;
             this.lblResultado.Text = "Resultado";
             this.lblResultado.Visible = false;
-  
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(26, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(92, 30);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "INSS: R$";
+            // 
             // frmDescontoInss
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -111,5 +123,6 @@
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.Panel panelResultado;
         private System.Windows.Forms.Label lblResultado;
+        private System.Windows.Forms.Label label1;
     }
 }

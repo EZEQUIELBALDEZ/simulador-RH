@@ -39,6 +39,9 @@ namespace iRh.Windows.Simuladores
 
                 lblResultado.Visible = true;
                 panelResultado.Visible = true;
+
+
+
             }
             catch (Exception)
             {

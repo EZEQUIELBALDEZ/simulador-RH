@@ -1,12 +1,5 @@
 ﻿using iRh.Windows.Core;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace iRh.Windows.Cadastros
@@ -21,6 +14,7 @@ namespace iRh.Windows.Cadastros
         private void frmFuncionario_Load(object sender, System.EventArgs e)
         {
             CarregarEstados();
+            CarregarDocumentos();
         }
 
         private void CarregarEstados()
@@ -29,17 +23,28 @@ namespace iRh.Windows.Cadastros
             var listaEstados = estado.ObterTodosEstados();
             var estadosAz = listaEstados.OrderBy(x => x.Sigla).ToList();
             cmbEstados.Items.Clear();
-            cmbEstados.DataSource = estadosAz;
+            cmbEstados.DataSource = estadosAz;            
             cmbEstados.DisplayMember = "Nome";
-            cmbEstados.ValueMember = "Sigla";
+            cmbEstados.ValueMember = "Sigla";            
         }
 
-        private void btnPesquisar_Click(object sender,System. , EventArgs e)
+        private void CarregarDocumentos()
+        {
+            var documentos = new DocumentoIndentificacao();
+            var listaDocumentos = documentos.ObterTodos();
+
+            cmbDocumentoIdentidade.Items.Clear();
+            cmbDocumentoIdentidade.DataSource = listaDocumentos.OrderBy(x => x.Descricao).ToList();
+            cmbDocumentoIdentidade.DisplayMember = "Descricao";
+            cmbDocumentoIdentidade.ValueMember = "Id";
+        }
+
+        private void btnPesquisar_Click(object sender, System.EventArgs e)
         {
             var cepDigitado = txtCep.Text;
-            if (cepDigitado.Length < 9)
+            if(cepDigitado.Length < 9)
             {
-                MessageBox.Show("Digite um cep valido", "Error");
+                MessageBox.Show("Digite um cep válido");
                 txtCep.Focus();
                 return;
             }
@@ -48,20 +53,24 @@ namespace iRh.Windows.Cadastros
 
             var enderecoCompleto = endereco.ObterPorCep(cepDigitado);
 
+            
             if(enderecoCompleto.Erro == true)
             {
                 MessageBox.Show("O cep informado não existe");
                 txtCep.Focus();
                 return;
             }
+
             if(endereco.Localidade != "")
             {
-                txtCidade.Enabled = false;  
+                txtCidade.Enabled = false;
             }
+
             if(endereco.Uf != "")
             {
-                cbm
+                cmbEstados.Enabled = false;
             }
+
 
             txtLogradouro.Text = enderecoCompleto.Logradouro;
             txtBairro.Text = enderecoCompleto.Bairro;
@@ -71,7 +80,5 @@ namespace iRh.Windows.Cadastros
 
 
         }
-
-       
     }
 }
