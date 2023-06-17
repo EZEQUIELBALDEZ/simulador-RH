@@ -53,23 +53,6 @@ namespace iRh.Windows.Cadastros
 
             var enderecoCompleto = endereco.ObterPorCep(cepDigitado);
 
-            
-            if(enderecoCompleto.Erro == true)
-            {
-                MessageBox.Show("O cep informado não existe");
-                txtCep.Focus();
-                return;
-            }
-
-            if(endereco.Localidade != "")
-            {
-                txtCidade.Enabled = false;
-            }
-
-            if(endereco.Uf != "")
-            {
-                cmbEstados.Enabled = false;
-            }
 
 
             txtLogradouro.Text = enderecoCompleto.Logradouro;
@@ -80,5 +63,8 @@ namespace iRh.Windows.Cadastros
 
 
         }
+
+
+        
     }
 }

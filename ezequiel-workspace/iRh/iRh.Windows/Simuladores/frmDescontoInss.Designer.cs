@@ -32,8 +32,8 @@
             this.txtSalario = new System.Windows.Forms.TextBox();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.panelResultado = new System.Windows.Forms.Panel();
-            this.lblResultado = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblResultado = new System.Windows.Forms.Label();
             this.panelResultado.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,14 +68,24 @@
             // 
             // panelResultado
             // 
-            this.panelResultado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panelResultado.BackColor = System.Drawing.Color.Transparent;
             this.panelResultado.Controls.Add(this.label1);
             this.panelResultado.Controls.Add(this.lblResultado);
-            this.panelResultado.Location = new System.Drawing.Point(0, 209);
+            this.panelResultado.Location = new System.Drawing.Point(0, 141);
             this.panelResultado.Name = "panelResultado";
-            this.panelResultado.Size = new System.Drawing.Size(441, 113);
+            this.panelResultado.Size = new System.Drawing.Size(284, 83);
             this.panelResultado.TabIndex = 3;
             this.panelResultado.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(26, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(92, 30);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "INSS: R$";
             // 
             // lblResultado
             // 
@@ -87,16 +97,6 @@
             this.lblResultado.TabIndex = 4;
             this.lblResultado.Text = "Resultado";
             this.lblResultado.Visible = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(26, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 30);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "INSS: R$";
             // 
             // frmDescontoInss
             // 

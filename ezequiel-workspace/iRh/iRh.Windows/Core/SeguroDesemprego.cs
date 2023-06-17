@@ -13,12 +13,9 @@ namespace iRh.Windows.Core
         {
            // const double salarioMinimoAtual = 1302.0;
             {
-                double salarioAcumulado;
+               
 
-                
-
-
-                        return 0;
+                return 0;
                     
 
                     

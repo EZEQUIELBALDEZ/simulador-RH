@@ -45,6 +45,7 @@
             this.txtSalario.Name = "txtSalario";
             this.txtSalario.Size = new System.Drawing.Size(267, 29);
             this.txtSalario.TabIndex = 27;
+
             // 
             // label1
             // 
@@ -91,7 +92,7 @@
             // 
             this.lblResultado.AutoSize = true;
             this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultado.Location = new System.Drawing.Point(176, 14);
+            this.lblResultado.Location = new System.Drawing.Point(174, 29);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(104, 30);
             this.lblResultado.TabIndex = 4;

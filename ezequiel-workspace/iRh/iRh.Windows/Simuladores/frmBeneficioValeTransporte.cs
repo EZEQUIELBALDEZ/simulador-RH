@@ -32,10 +32,17 @@ namespace iRh.Windows.Simuladores
 
             try
             {
-                var salario = double.Parse(txtSalario.Text);
-                var Beneficiovaletransporte = ValeTransporte.Calcula(salario);
+                var salario = double.Parse(txtSalarioBruto.Text);
+                var resultado = double.Parse(lblResultado.Text);
+                var usoTransporteMes = double.Parse(txtusoTransporteMes.Text);
 
-                lblResultado.Text = Beneficiovaletransporte.ToString("C");
+                var Beneficiovaletransporte = ValeTransporte.Calcula(salario, usoTransporteMes, resultado);
+
+                
+
+                
+
+                lblResultado .Text = Beneficiovaletransporte.ToString("C");
 
                 lblResultado.Visible = true;
                 panelResultado.Visible = true;
@@ -50,5 +57,7 @@ namespace iRh.Windows.Simuladores
                                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        
     }
 }

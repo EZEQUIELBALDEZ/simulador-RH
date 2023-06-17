@@ -38,10 +38,8 @@
             this.txtSalario = new System.Windows.Forms.TextBox();
             this.lblSalario = new System.Windows.Forms.Label();
             this.panelResultado = new System.Windows.Forms.Panel();
+            this.lblReceberaPelasHorasExtrasTrabalhadas = new System.Windows.Forms.Label();
             this.lblResultado = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panelResultado.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -131,9 +129,7 @@
             // panelResultado
             // 
             this.panelResultado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.panelResultado.Controls.Add(this.label3);
-            this.panelResultado.Controls.Add(this.label2);
-            this.panelResultado.Controls.Add(this.label1);
+            this.panelResultado.Controls.Add(this.lblReceberaPelasHorasExtrasTrabalhadas);
             this.panelResultado.Controls.Add(this.lblResultado);
             this.panelResultado.Location = new System.Drawing.Point(31, 229);
             this.panelResultado.Name = "panelResultado";
@@ -141,47 +137,26 @@
             this.panelResultado.TabIndex = 18;
             this.panelResultado.Visible = false;
             // 
+            // lblReceberaPelasHorasExtrasTrabalhadas
+            // 
+            this.lblReceberaPelasHorasExtrasTrabalhadas.AutoSize = true;
+            this.lblReceberaPelasHorasExtrasTrabalhadas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReceberaPelasHorasExtrasTrabalhadas.Location = new System.Drawing.Point(3, 45);
+            this.lblReceberaPelasHorasExtrasTrabalhadas.Name = "lblReceberaPelasHorasExtrasTrabalhadas";
+            this.lblReceberaPelasHorasExtrasTrabalhadas.Size = new System.Drawing.Size(346, 21);
+            this.lblReceberaPelasHorasExtrasTrabalhadas.TabIndex = 25;
+            this.lblReceberaPelasHorasExtrasTrabalhadas.Text = "Você receberá pelas horas extras trabalhadas: R$";
+            // 
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
             this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultado.Location = new System.Drawing.Point(277, 14);
+            this.lblResultado.Location = new System.Drawing.Point(355, 38);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(104, 30);
             this.lblResultado.TabIndex = 4;
             this.lblResultado.Text = "Resultado";
             this.lblResultado.Visible = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(277, 68);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 30);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Resultado";
-            this.label1.Visible = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(15, 21);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(189, 21);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "Qual a taxa da hora extra?";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(15, 75);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(189, 21);
-            this.label3.TabIndex = 26;
-            this.label3.Text = "Qual a taxa da hora extra?";
             // 
             // frmBeneficioHoraExtra
             // 
@@ -220,8 +195,6 @@
         private System.Windows.Forms.Label lblSalario;
         private System.Windows.Forms.Panel panelResultado;
         private System.Windows.Forms.Label lblResultado;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblReceberaPelasHorasExtrasTrabalhadas;
     }
 }

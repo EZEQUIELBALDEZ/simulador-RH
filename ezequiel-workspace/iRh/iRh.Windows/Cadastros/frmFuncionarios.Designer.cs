@@ -49,12 +49,12 @@
             this.button2 = new System.Windows.Forms.Button();
             this.txtDdd = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtTelefone = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.linkContateNosWhatsApp = new System.Windows.Forms.LinkLabel();
             this.cmbDocumentoIdentidade = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txtCep = new System.Windows.Forms.MaskedTextBox();
+            this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -130,7 +130,7 @@
             // 
             this.txtLogradouro.Location = new System.Drawing.Point(39, 213);
             this.txtLogradouro.Name = "txtLogradouro";
-            this.txtLogradouro.Size = new System.Drawing.Size(280, 20);
+            this.txtLogradouro.Size = new System.Drawing.Size(266, 20);
             this.txtLogradouro.TabIndex = 10;
             // 
             // label5
@@ -144,15 +144,15 @@
             // 
             // txtBairro
             // 
-            this.txtBairro.Location = new System.Drawing.Point(416, 213);
+            this.txtBairro.Location = new System.Drawing.Point(412, 213);
             this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(191, 20);
+            this.txtBairro.Size = new System.Drawing.Size(171, 20);
             this.txtBairro.TabIndex = 12;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(413, 196);
+            this.label6.Location = new System.Drawing.Point(409, 195);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(48, 13);
             this.label6.TabIndex = 11;
@@ -193,7 +193,7 @@
             // 
             // txtNumero
             // 
-            this.txtNumero.Location = new System.Drawing.Point(325, 214);
+            this.txtNumero.Location = new System.Drawing.Point(317, 213);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(73, 20);
             this.txtNumero.TabIndex = 18;
@@ -201,7 +201,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(322, 195);
+            this.label9.Location = new System.Drawing.Point(314, 195);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(55, 13);
             this.label9.TabIndex = 17;
@@ -209,15 +209,15 @@
             // 
             // button2
             // 
-  
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(278, 316);
+            this.button2.Location = new System.Drawing.Point(259, 317);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(27, 20);
             this.button2.TabIndex = 19;
             this.button2.UseVisualStyleBackColor = true;
+
             // 
             // txtDdd
             // 
@@ -235,13 +235,6 @@
             this.label10.TabIndex = 20;
             this.label10.Text = "DDD";
             // 
-            // txtTelefone
-            // 
-            this.txtTelefone.Location = new System.Drawing.Point(81, 316);
-            this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.Size = new System.Drawing.Size(191, 20);
-            this.txtTelefone.TabIndex = 23;
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -251,16 +244,17 @@
             this.label11.TabIndex = 22;
             this.label11.Text = "TELEFONE";
             // 
-            // linkLabel1
+            // linkContateNosWhatsApp
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(304, 314);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(135, 24);
-            this.linkLabel1.TabIndex = 24;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "chamar no zap";
+            this.linkContateNosWhatsApp.AutoSize = true;
+            this.linkContateNosWhatsApp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkContateNosWhatsApp.Location = new System.Drawing.Point(386, 316);
+            this.linkContateNosWhatsApp.Name = "linkContateNosWhatsApp";
+            this.linkContateNosWhatsApp.Size = new System.Drawing.Size(234, 20);
+            this.linkContateNosWhatsApp.TabIndex = 24;
+            this.linkContateNosWhatsApp.TabStop = true;
+            this.linkContateNosWhatsApp.Text = "Nos contate_nos os WhatsApp ";
+
             // 
             // cmbDocumentoIdentidade
             // 
@@ -287,16 +281,24 @@
             this.txtCep.Size = new System.Drawing.Size(100, 20);
             this.txtCep.TabIndex = 27;
             // 
+            // txtTelefone
+            // 
+            this.txtTelefone.Location = new System.Drawing.Point(81, 317);
+            this.txtTelefone.Mask = "00000-0000";
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(151, 20);
+            this.txtTelefone.TabIndex = 28;
+            // 
             // frmFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(653, 431);
+            this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.txtCep);
             this.Controls.Add(this.cmbDocumentoIdentidade);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.txtTelefone);
+            this.Controls.Add(this.linkContateNosWhatsApp);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtDdd);
             this.Controls.Add(this.label10);
@@ -350,11 +352,11 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox txtDdd;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtTelefone;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel linkContateNosWhatsApp;
         private System.Windows.Forms.ComboBox cmbDocumentoIdentidade;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.MaskedTextBox txtCep;
+        private System.Windows.Forms.MaskedTextBox txtTelefone;
     }
 }

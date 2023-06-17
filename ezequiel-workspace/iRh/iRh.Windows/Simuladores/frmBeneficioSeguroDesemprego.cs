@@ -27,8 +27,36 @@ namespace iRh.Windows.Simuladores
 
                 txtSalario.Focus();
                 return;
-            }
 
+                double salarioAcumulado;
+
+                var salario = double.Parse(txtSalario.Text);
+
+                int quantidade_de_solicitacoes;
+
+
+                const double salarioMinimoAtual = 1302.0;
+
+                salarioAcumulado = salario * 18;
+
+
+                if (salarioAcumulado / salarioMinimoAtual >= 12)
+                {
+
+                    MessageBox.Show("Você tem direito ao Seguro_Desemprego!");
+
+                }
+                else
+                {
+                    MessageBox.Show("Você não tem direito ao Seguro_Desemprego!");
+
+
+                }
+
+
+
+
+            }
             try
             {
                 var salario = double.Parse(txtSalario.Text);
@@ -46,6 +74,10 @@ namespace iRh.Windows.Simuladores
                                     "Atenção",
                                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+
+
         }
+
+      
     }
 }
